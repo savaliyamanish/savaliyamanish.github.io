@@ -1,0 +1,167 @@
+{
+  "baseUrl": "https://savaliyamanish.github.io/ProjectHub/",
+  "gameProjects": [
+    {
+      "id": "1_narqubis",
+      "override": {}
+    },
+    {
+      "id": "20_MatchMaster",
+      "override": {}
+    },
+    {
+      "id": "3_knifehit",
+      "override": {}
+    },
+    {
+      "id": "27_LiveMCL_Quiz",
+      "override": {}
+    },
+    {
+      "id": "5_sudoku",
+      "override": {}
+    },
+    {
+      "id": "2_uno",
+      "override": {}
+    },
+    {
+      "id": "34_HungerFeed",
+      "override": {}
+    },
+    {
+      "id": "26_TeenPatti",
+      "override": {}
+    },
+    {
+      "id": "13_cribbagesolitaire",
+      "override": {}
+    },
+    {
+      "id": "6_matchpuzzle",
+      "override": {}
+    },
+    {
+      "id": "7_pipeout",
+      "override": {}
+    },
+    {
+      "id": "15_ginrummy",
+      "override": {}
+    },
+    {
+      "id": "8_panchout",
+      "override": {}
+    },
+    {
+      "id": "10_bubquest",
+      "override": {}
+    },
+    {
+      "id": "11_carbump",
+      "override": {}
+    },
+    {
+      "id": "12_coloraize",
+      "override": {}
+    },
+    {
+      "id": "19_Match3",
+      "override": {}
+    },
+    {
+      "id": "31_ColorPoint",
+      "override": {}
+    },
+    {
+      "id": "32_DontEndWord",
+      "override": {}
+    },
+    {
+      "id": "33_ForgottoneHero",
+      "override": {}
+    },
+    {
+      "id": "40_BasketBall",
+      "override": {}
+    },
+    {
+      "id": "41_TrafficCar",
+      "override": {}
+    },
+    {
+      "id": "18_LoadedRunner",
+      "override": {}
+    },
+    {
+      "id": "29_Boozeo",
+      "override": {}
+    },
+    {
+      "id": "28_BibleWar",
+      "override": {}
+    },
+    {
+      "id": "35_Loaded_Shooter",
+      "override": {}
+    },
+    {
+      "id": "25_Striker",
+      "override": {}
+    },
+    {
+      "id": "30_CoinGrid",
+      "override": {}
+    },
+    {
+      "id": "24_SpaceFarm",
+      "override": {}
+    },
+    {
+      "id": "22_SlackDay",
+      "override": {}
+    },
+    {
+      "id": "36_Lupan",
+      "override": {}
+    },
+    {
+      "id": "37_MailBox",
+      "override": {}
+    },
+    {
+      "id": "38_RollingPo",
+      "override": {}
+    },
+    {
+      "id": "16_kachufull",
+      "override": {}
+    },
+    {
+      "id": "23_SpaceExit",
+      "override": {}
+    },
+    {
+      "id": "17_kathmandu",
+      "override": {}
+    }
+  ],
+  "otherProjects": [
+    {
+      "id": "9_music",
+      "override": {}
+    },
+    {
+      "id": "4_kidgame",
+      "override": {}
+    },
+    {
+      "id": "39_StatusQ",
+      "override": {}
+    },
+    {
+      "id": "21_ModularsForYouKitchen",
+      "override": {}
+    }
+  ]
+}
