@@ -2,8 +2,8 @@
   <div class="header">
     <div class="nav-bar">
       <router-link class="brand" to="/">
-        <span class="brand-mark" aria-hidden="true">MV</span>
-        <span class="brand-text">Mohit Vaghela</span>
+        <span class="brand-mark" aria-hidden="true">MS</span>
+        <span class="brand-text">Manish Savaliya</span>
       </router-link>
       <router-link to="/">About me</router-link>
       <router-link to="/game-projects">Games</router-link>
@@ -18,7 +18,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Header"
+  name: "AppHeader"
 });
 
 </script>
