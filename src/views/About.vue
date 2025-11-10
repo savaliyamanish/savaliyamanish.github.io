@@ -62,14 +62,15 @@
               <h3>Game Design</h3>
             </div>
             <ul class="skill-list">
-              <li><span class="pill">Level design & flow</span></li>
-              <li><span class="pill">Systems (combat, economy, progression)</span></li>
-              <li><span class="pill">Core gameplay loop</span></li>
-              <li><span class="pill">Camera & player feedback</span></li>
-              <li><span class="pill">Puzzle & mission structure</span></li>
-              <li><span class="pill">Rapid prototyping & iteration</span></li>
-              <li><span class="pill">Balance & analytics‑driven tuning</span></li>
-              <li><span class="pill">Onboarding & retention</span></li>
+              <li><span class="pill">Level design, layout & player flow</span></li>
+              <li><span class="pill">Gameplay systems (combat, economy, progression)</span></li>
+              <li><span class="pill">Core gameplay loop & pacing</span></li>
+              <li><span class="pill">Puzzle and mission structure design</span></li>
+              <li><span class="pill">Prototyping, iteration & gameplay testing</span></li>
+              <li><span class="pill">Game balancing & difficulty tuning</span></li>
+              <li><span class="pill">Player onboarding & retention strategy</span></li>
+              <li><span class="pill">UI/UX flow alignment with gameplay</span></li>
+              <li><span class="pill">Documentation & design specifications</span></li>
             </ul>
           </div>
 
