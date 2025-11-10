@@ -3,181 +3,214 @@
     <div class="hero-section">
       <div class="hero-content">
         <h1 class="hero-title">
-          <span class="greeting">Hello, I am</span>
-          <span class="name">Manish Savaliya</span>
-        </h1>
-        <div class="hero-subtitle">Senior Unity Game Developer</div>
+            <span class="greeting">Hello, I am</span>
+            <span class="name">Manish Savaliya</span>
+          </h1>
         <div class="hero-description">
-          <p>I am a Senior Unity Game Developer with deep hands‑on experience designing and building many types of games. My strengths include gameplay systems, UI/UX implementation, level design, multiplayer (Photon/Mirror), tooling, analytics, and performance optimization for smooth player experiences across mobile and PC.</p>
-          <p class="hero-cta">Open to opportunities — feel free to <router-link to="/contact" class="contact-link">contact me</router-link>.</p>
-        </div>
-        <div class="hero-contact-info">
-          <div class="email-text">
-            <span class="email-label">Email:</span>
-            <a class="email-address" href="mailto:savaliyamanish1141@gmail.com">savaliyamanish1141@gmail.com</a>
-          </div>
-          <div class="hero-action-buttons">
-            <a href="https://www.linkedin.com/in/savaliyamanish/" class="action-btn linkedin-btn" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              <span>LinkedIn</span>
-            </a>
-          </div>
+          <p>
+              I’m a passionate <strong>Unity Game Developer</strong> with over 8 years of experience creating engaging mobile and PC games. I specialize in gameplay programming, performance optimization, and smooth user experiences that bring ideas to life.
+            </p>
+          <p class="hero-cta">
+            Open to work — feel free to
+            <router-link to="/contact" class="contact-link">contact me</router-link>,
+            or connect on
+            <a class="contact-link" href="https://www.linkedin.com/in/savaliyamanish/" target="_blank" rel="noopener">
+              LinkedIn
+            </a>.
+          </p>
         </div>
       </div>
       <div class="hero-photo">
         <div class="photo-wrapper">
           <div class="photo-border"></div>
-          <img :src="`img/avatar.png`" alt="Avatar of Manish" class="avatar-image" />
+          <img :src="`img/avatar.png`" alt="Avatar of Mohit" class="avatar-image" />
           <div class="photo-glow"></div>
         </div>
       </div>
     </div>
 
     <div class="full-content">
-      <h2>Skills</h2>
+      <h2 id="skills">Skills</h2>
 
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Programming</h3>
-          <ul>
-            <li>Game development in Unity.</li>
-            <li>C# / C++ gameplay programming & optimization</li>
-            <li>AI, animation, physics, and system integration</li>
-            <li>UI/UX implementation and interactive menus</li>
-            <li>Multiplayer & Real-time Systems (Photon · Mirror · Socket.IO)</li>
-            <li>Profiling, debugging, and performance tuning</li>
-            <li>Close collaboration with art & design teams</li>
-          </ul>
+        <div class="skills-grid" role="list" aria-labelledby="skills">
+          <!-- Game Development -->
+          <div class="skill-category" role="listitem">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">🕹️</span>
+              <h3>Game Development</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="pill">Unity Engine (C#)</span></li>
+              <li><span class="pill">Gameplay programming</span></li>
+              <li><span class="pill">Physics, AI, pathfinding (NavMesh)</span></li>
+              <li><span class="pill">Animation (Mecanim, blend trees)</span></li>
+              <li><span class="pill">Input: mobile · controller · PC</span></li>
+              <li><span class="pill">UI/UX (UI Toolkit, UGUI)</span></li>
+              <li><span class="pill">Shader Graph (basic)</span></li>
+              <li><span class="pill">Scripting & debugging</span></li>
+              <li><span class="pill">Multiplayer (Photon, Mirror, Socket.IO)</span></li>
+              <li><span class="pill">Optimization & profiling</span></li>
+              <li><span class="pill">Addressables & asset bundles</span></li>
+              <li><span class="pill">Monetization: IAP & Ads</span></li>
+            </ul>
+          </div>
+
+          <!-- Game Design -->
+          <div class="skill-category" role="listitem">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">🎮</span>
+              <h3>Game Design</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="pill">Level design & flow</span></li>
+              <li><span class="pill">Systems (combat, economy, progression)</span></li>
+              <li><span class="pill">Core gameplay loop</span></li>
+              <li><span class="pill">Camera & player feedback</span></li>
+              <li><span class="pill">Puzzle & mission structure</span></li>
+              <li><span class="pill">Rapid prototyping & iteration</span></li>
+              <li><span class="pill">Balance & analytics‑driven tuning</span></li>
+              <li><span class="pill">Onboarding & retention</span></li>
+            </ul>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category" role="listitem">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true">🧰</span>
+              <h3>Development &amp; Design Tools</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="pill">Unity</span></li>
+              <li><span class="pill">GitHub</span></li>
+              <li><span class="pill">Plastic SCM</span></li>
+              <li><span class="pill">Visual Studio Code</span></li>
+              <li><span class="pill">Rider</span></li>
+              <li><span class="pill">Cursor</span></li>
+              <li><span class="pill">Blender</span></li>
+              <li><span class="pill">Photoshop</span></li>
+              <li><span class="pill">Illustrator</span></li>
+              <li><span class="pill">Figma</span></li>
+              <li><span class="pill">Trello</span></li>
+              <li><span class="pill">Firebase</span></li>
+              <li><span class="pill">Unity Analytics</span></li>
+              <li><span class="pill">Ads SDKs</span></li>
+              <li><span class="pill">Gradle</span></li>
+              <li><span class="pill">Xcode</span></li>
+              <li><span class="pill">Android Studio</span></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="skill-category">
-          <h3>Leadership</h3>
-          <ul>
-            <li>Mentored junior developers & designers to enhance team performance.</li>
-            <li>Led projects from concept to launch across multiple platforms.</li>
-            <li>Coordinated cross-functional teams for aligned vision and execution.</li>
-            <li>Talent recruiting, hiring, and team building.</li>
-            <li>Oversaw gameplay direction, system design, and iterative playtests.</li>
-            <li>Streamlined development workflows and optimized pipelines.</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>Level Design</h3>
-          <ul>
-            <li>Level layout & blockouts: crafting engaging, playable spaces with clear flow.</li>
-            <li>Combat encounters & pacing: designing challenges that feel balanced and dynamic.</li>
-            <li>Cinematic & event scripting: creating immersive story-driven moments.</li>
-            <li>Game system integration: ensuring levels complement overall mechanics.</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h3>Software</h3>
-          <ul>
-            <li>Unity Engine, Visual Studio, Cursor, Plastic SCM, Github</li>
-            <li>Blender, Adobe Photoshop</li>
-            <li>Figma, Trello</li>
-          </ul>
-        </div>
-      </div>
-
       <h2>Work experience</h2>
 
       <div class="experience-timeline">
+         
         <div class="experience-card">
-          <div class="experience-header">
-            <div>
-              <h3>Senior Game Developer</h3>
-              <div class="company-name">Narqubis Games Private Limited</div>
-            </div>
-            <div class="status-badge current">Current</div>
-          </div>
-          <div class="experience-meta">
-            <span class="date-range">Jan 2023 – Present</span>
-            <span class="separator">•</span>
-            <span>Full-time</span>
-            <span class="separator">•</span>
-            <span>Rajkot</span>
-          </div>
-          <div class="experience-description">
-            Leading gameplay features and shipping updates for live titles. Owning end-to-end delivery from prototyping to release with a focus on polish, performance, and player experience.
-          </div>
-          <div class="tech-stack">
-            <span class="tech-tag">Unity (C#)</span>
-            <span class="tech-tag">Mobile/PC</span>
-            <span class="tech-tag">Gameplay systems</span>
-            <span class="tech-tag">UI/UX</span>
-            <span class="tech-tag">Optimization</span>
-          </div>
-        </div>
+  <div class="experience-header">
+    <div>
+      <h3>Senior Game Developer</h3>
+      <div class="company-name">Narqubis Games Private Limited</div>
+    </div>
+    <div class="status-badge current">Current</div>
+  </div>
+  <div class="experience-meta">
+    <span class="date-range">Jan 2023 – Present</span>
+    <span class="separator">•</span>
+    <span>Full-time</span>
+    <span class="separator">•</span>
+    <span>Rajkot</span>
+  </div>
+  <div class="experience-description">
+    Working on <strong>NARQUBIS – Mini Battle Royale</strong>, a tactical shooting and resource‑collection game. Responsible for core gameplay systems, combat logic, and performance optimization across mobile and PC. Contributed to multiplayer, UI/UX polish, and monetization systems (IAP & ads) while improving stability and player experience for live updates.
+  </div>
+  <div class="tech-stack">
+  <span class="tech-tag">Unity (C#)</span>
+  <span class="tech-tag">Multiplayer (Photon / Socket.IO)</span>
+  <span class="tech-tag">Gameplay Systems</span>
+  <span class="tech-tag">Combat Mechanics</span>
+  <span class="tech-tag">UI/UX Implementation</span>
+  <span class="tech-tag">Optimization & Profiling</span>
+  <span class="tech-tag">Asset Bundles</span>
+  <span class="tech-tag">Monetization (IAP & Ads)</span>
+  <span class="tech-tag">Firebase / Analytics</span>
+</div>
 
-        <div class="experience-card">
-          <div class="experience-header">
-            <div>
-              <h3>Senior Game Developer</h3>
-              <div class="company-name">Freebird App Studio LLP</div>
-            </div>
-          </div>
-          <div class="experience-meta">
-            <span class="date-range">Jan 2016 – Dec 2022</span>
-            <span class="separator">•</span>
-            <span>Full-time</span>
-          </div>
-          <div class="experience-description">
-            Developed and maintained multiple commercial games over 8 years. Built core loops, tools, and live-ops flows; collaborated across design, art, and QA to deliver reliable releases.
-          </div>
-          <div class="tech-stack">
-            <span class="tech-tag">Unity (C#)</span>
-            <span class="tech-tag">Addressables</span>
-            <span class="tech-tag">Analytics</span>
-            <span class="tech-tag">Store integrations</span>
-            <span class="tech-tag">Live-ops</span>
-          </div>
-        </div>
+</div>
+
+ <div class="experience-card">
+  <div class="experience-header">
+    <div>
+      <h3>Senior Game Developer</h3>
+      <div class="company-name">Freebird App Studio LLP</div>
+    </div>
+  </div>
+  <div class="experience-meta">
+    <span class="date-range">Jan 2016 – Dec 2022</span>
+    <span class="separator">•</span>
+    <span>Full-time</span>
+  </div>
+  <div class="experience-description">
+    Developed and maintained multiple commercial mobile games from concept to launch. Built core gameplay systems, live-ops tools, and analytics integrations. Collaborated with design, art, and QA teams to deliver polished, high-performance game experiences across various genres and platforms.
+  </div>
+  <div class="tech-stack">
+  <span class="tech-tag">Unity (C#)</span>
+  <span class="tech-tag">2D / 3D Game Development</span>
+  <span class="tech-tag">Gameplay Systems</span>
+  <span class="tech-tag">UI/UX Implementation</span>
+  <span class="tech-tag">Animation & Effects</span>
+  <span class="tech-tag">Level Design & Tools</span>
+  <span class="tech-tag">Asset Bundles & Addressables</span>
+  <span class="tech-tag">Audio Integration</span>
+  <span class="tech-tag">Firebase / Analytics</span>
+  <span class="tech-tag">Monetization (IAP & Ads)</span>
+  <span class="tech-tag">Store Integrations (Google Play / App Store)</span>
+  <span class="tech-tag">Live-Ops & Remote Config</span>
+  <span class="tech-tag">Optimization & Profiling</span>
+  <span class="tech-tag">Build Pipeline & Automation</span>
+  <span class="tech-tag">Performance Debugging</span>
+</div>
+
+</div>
+</div>
+
+<h2>Education</h2>
+
+<div class="education-timeline">
+  <div class="education-card">
+    <div class="education-icon">🎓</div>
+    <div class="education-content">
+      <h3>Master of Computer Application (MCA)</h3>
+      <div class="institution-name">Department of Computer Science, Saurashtra University, Rajkot</div>
+      <div class="education-year">March 2016</div>
+      <div class="education-description">
+        Specialized in software engineering, systems design, and application development.
       </div>
+    </div>
+  </div>
 
-      <h2>Education</h2>
-
-      <div class="education-timeline">
-        <div class="education-card">
-          <div class="education-icon">🎓</div>
-          <div class="education-content">
-            <h3>MSc IT & CA, Computer Software</h3>
-            <div class="institution-name">Department of Computer Science, Rajkot</div>
-            <div class="education-year">2014 – 2016</div>
-            <div class="education-description">
-              Advanced coursework covering software engineering, systems design, and application development.
-            </div>
-          </div>
-        </div>
-
-        <div class="education-card">
-          <div class="education-icon">📚</div>
-          <div class="education-content">
-            <h3>PGDCA, Computer Programming</h3>
-            <div class="institution-name">Kamani Science & Prataprai Arts College</div>
-            <div class="education-year">2013 – 2014</div>
-            <div class="education-description">
-              Postgraduate diploma focusing on programming fundamentals and practical application development.
-            </div>
-          </div>
-        </div>
-
-        <div class="education-card">
-          <div class="education-icon">🎯</div>
-          <div class="education-content">
-            <h3>B.Com., Computer Science</h3>
-            <div class="institution-name">K.K.Parekh Commerce College</div>
-            <div class="education-year">2011 – 2013</div>
-            <div class="education-description">
-              Foundations in computer science alongside commerce curriculum; activities and societies: debate team.
-            </div>
-          </div>
-        </div>
+  <div class="education-card">
+    <div class="education-icon">🎯</div>
+    <div class="education-content">
+      <h3>Bachelor of Computer Application (BCA)</h3>
+      <div class="institution-name">Harivandana College, Saurashtra University, Rajkot</div>
+      <div class="education-year">March 2014</div>
+      <div class="education-description">
+        Focused on computer programming, database management, and software development.
       </div>
+    </div>
+  </div>
+
+  <div class="education-card">
+    <div class="education-icon">📘</div>
+    <div class="education-content">
+      <h3>Higher Secondary Certificate (HSC)</h3>
+      <div class="institution-name">Gujarat Secondary and Higher Secondary Education Board</div>
+      <div class="education-year">March 2011</div>
+      <div class="education-description">
+        Completed higher secondary education with a focus on mathematics and computer science.
+      </div>
+    </div>
+  </div>
+</div>
 
       <h2>Languages</h2>
 
@@ -212,10 +245,13 @@
       
       <div class="divider"></div>
       
-      <div class="cta-row">
-        <router-link class="btn-primary" to="/contact">Contact</router-link>
-        <a class="btn-secondary" href="https://www.linkedin.com/in/savaliyamanish/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+      <p class="hero-cta">
+            <router-link to="/contact" class="contact-link">contact me</router-link>,
+            or connect on
+            <a class="contact-link" href="https://www.linkedin.com/in/savaliyamanish/" target="_blank" rel="noopener">
+              LinkedIn
+            </a>.
+          </p>
     </div>
 
   </div>
@@ -326,18 +362,20 @@ export default defineComponent({
 
 .contact-link {
   color: #3b82f6;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(96, 165, 250, 0.7);
   transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
   background: rgba(59, 130, 246, 0.12);
-  padding: 2px 8px;
+  padding: 2px 6px;
   border-radius: 6px;
 }
 
 .contact-link:hover {
   color: #60a5fa;
-  border-bottom-color: #60a5fa;
+  text-decoration-color: #60a5fa;
+  background: rgba(59, 130, 246, 0.2);
 }
 
 /* Hero Contact Info */
@@ -366,17 +404,6 @@ export default defineComponent({
   font-weight: 500;
   font-family: monospace;
   letter-spacing: 0.5px;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-  background: rgba(59, 130, 246, 0.12);
-  padding: 2px 6px;
-  border-radius: 6px;
-}
-
-.email-address:hover {
-  color: #60a5fa;
-  border-bottom-color: #60a5fa;
 }
 
 /* Hero Action Buttons */
@@ -410,19 +437,15 @@ export default defineComponent({
 }
 
 .linkedin-btn {
-  background: rgba(59, 130, 246, 0.12);
-  color: #bfdbfe;
-  border: none;
-  padding: 6px 8px;
-  border-radius: 6px;
-  border-bottom: 2px solid transparent;
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
 }
 
 .linkedin-btn:hover {
-  background: rgba(59, 130, 246, 0.2);
-  color: #e5efff;
-  border-bottom-color: #60a5fa;
-  transform: none;
+  background: linear-gradient(135deg, #004182 0%, #003d7a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.4);
 }
 
 @media only screen and (min-width: 640px) {
@@ -679,58 +702,16 @@ export default defineComponent({
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-.skill-category {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 24px;
-  transition: all 0.3s ease;
-}
-
-.skill-category:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(59, 130, 246, 0.3);
-  transform: translateY(-2px);
-}
-
-.skill-category h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 16px 0;
-  color: #3b82f6;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-category ul li {
-  padding: 8px 0;
-  padding-left: 20px;
-  position: relative;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.skill-category ul li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: #3b82f6;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-/* Education Styling */
-.education-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
+.skills-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px; }
+@media only screen and (min-width: 900px) { .skills-grid { grid-template-columns: repeat(3, 1fr); } }
+.skill-category { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 22px; transition: all 0.3s ease; }
+.skill-category:hover { background: rgba(255, 255, 255, 0.05); border-color: rgba(59, 130, 246, 0.3); transform: translateY(-2px); }
+.skill-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.skill-icon { font-size: 1.4rem; }
+.skill-category h3 { font-size: 1.1rem; font-weight: 700; margin: 0; color: #8fb4ff; letter-spacing: 0.2px; }
+.skill-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; font-size: 0.88rem; line-height: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.92); }
+.pill:hover { background: rgba(59,130,246,0.14); border-color: rgba(59,130,246,0.35); }
 .education-card {
   display: flex;
   gap: 20px;

@@ -50,15 +50,11 @@
       "override": {}
     },
     {
-      "id": "11_carbump",
-      "override": {}
-    },
-    {
-      "id": "12_coloraize",
-      "override": {}
-    },
-    {
       "id": "31_ColorPoint",
+      "override": {}
+    },     
+    {
+      "id": "11_carbump",
       "override": {}
     },
     {
@@ -68,7 +64,7 @@
     {
       "id": "41_TrafficCar",
       "override": {}
-    },
+    },   
     {
       "id": "18_LoadedRunner",
       "override": {}
