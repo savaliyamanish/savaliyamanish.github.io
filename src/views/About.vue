@@ -23,7 +23,7 @@
       <div class="hero-photo">
         <div class="photo-wrapper">
           <div class="photo-border"></div>
-          <img :src="`img/avatar.png`" alt="Avatar of Mohit" class="avatar-image" />
+          <img :src="`img/avatar.png`" alt="Avatar of Manish" class="avatar-image" />
           <div class="photo-glow"></div>
         </div>
       </div>
@@ -188,7 +188,7 @@
   </div>
 
   <div class="education-card">
-    <div class="education-icon">🎯</div>
+    <div class="education-icon">📚</div>
     <div class="education-content">
       <h3>Bachelor of Computer Application (BCA)</h3>
       <div class="institution-name">Harivandana College, Saurashtra University, Rajkot</div>
@@ -200,7 +200,7 @@
   </div>
 
   <div class="education-card">
-    <div class="education-icon">📘</div>
+    <div class="education-icon">📖</div>
     <div class="education-content">
       <h3>Higher Secondary Certificate (HSC)</h3>
       <div class="institution-name">Gujarat Secondary and Higher Secondary Education Board</div>
@@ -215,43 +215,49 @@
       <h2>Languages</h2>
 
       <div class="languages-grid">
-        <div class="language-card">
+        <div class="language-card language-professional">
           <div class="language-icon">🌐</div>
           <div class="language-content">
             <h3>English</h3>
-            <div class="proficiency-badge professional">Professional</div>
-            <div class="proficiency-text">Professional working proficiency</div>
+            <div class="proficiency-wrapper">
+              <div class="proficiency-badge professional">Professional</div>
+              <div class="proficiency-text">Professional working proficiency</div>
+            </div>
           </div>
         </div>
 
-        <div class="language-card">
-          <div class="language-icon">🗣️</div>
+        <div class="language-card language-professional">
+          <div class="language-icon">📝</div>
           <div class="language-content">
             <h3>Hindi</h3>
-            <div class="proficiency-badge professional">Professional</div>
-            <div class="proficiency-text">Professional working proficiency</div>
+            <div class="proficiency-wrapper">
+              <div class="proficiency-badge professional">Professional</div>
+              <div class="proficiency-text">Professional working proficiency</div>
+            </div>
           </div>
         </div>
 
-        <div class="language-card">
-          <div class="language-icon">🏠</div>
+        <div class="language-card language-native">
+          <div class="language-icon">📚</div>
           <div class="language-content">
             <h3>Gujarati</h3>
-            <div class="proficiency-badge native">Native</div>
-            <div class="proficiency-text">Mother tongue</div>
+            <div class="proficiency-wrapper">
+              <div class="proficiency-badge native">Native</div>
+              <div class="proficiency-text">Mother tongue</div>
+            </div>
           </div>
         </div>
       </div>
       
-      <div class="divider"></div>
+      <!-- <div class="divider"></div> -->
       
-      <p class="hero-cta">
+      <!-- <p class="hero-cta">
             <router-link to="/contact" class="contact-link">contact me</router-link>,
             or connect on
             <a class="contact-link" href="https://www.linkedin.com/in/savaliyamanish/" target="_blank" rel="noopener">
               LinkedIn
             </a>.
-          </p>
+          </p> -->
     </div>
 
   </div>
@@ -565,128 +571,211 @@ export default defineComponent({
 
 .full-content h2 { margin-top: 60px; margin-bottom: 24px; }
 
-/* Work Experience Styling */
+/* Work Experience Styling - Alternative Vertical Timeline */
 .experience-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  position: relative;
+  padding-left: 0;
+  margin-top: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience-timeline {
+    padding-left: 40px;
+  }
+  
+  .experience-timeline::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, 
+      rgba(59, 130, 246, 0.4) 0%, 
+      rgba(139, 92, 246, 0.4) 50%, 
+      rgba(236, 72, 153, 0.2) 100%);
+    border-radius: 2px;
+  }
 }
 
 .experience-card {
+  position: relative;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 28px;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
   transition: all 0.3s ease;
-  position: relative;
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience-card {
+    margin-left: 40px;
+    padding: 28px 32px;
+  }
+  
+  .experience-card::before {
+    content: "";
+    position: absolute;
+    left: -52px;
+    top: 32px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border: 3px solid rgba(17, 24, 39, 0.95);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .experience-card:hover::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4), 0 0 20px rgba(59, 130, 246, 0.6);
+  }
 }
 
 .experience-card:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(59, 130, 246, 0.3);
-  transform: translateX(4px);
-}
-
-.experience-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, #3b82f6, transparent);
-  border-radius: 12px 0 0 12px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.experience-card:hover::before {
-  opacity: 1;
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .experience-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 12px;
-  gap: 16px;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 640px) {
+  .experience-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .experience-header h3 {
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin: 0;
   color: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .company-name {
-  font-size: 1.05rem;
-  color: #3b82f6;
+  font-size: 1.1rem;
+  color: #60a5fa;
   margin-top: 4px;
-  font-weight: 500;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .status-badge {
-  padding: 4px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
 }
 
 .status-badge.current {
-  background: rgba(34, 197, 94, 0.15);
-  color: #22c55e;
-  border: 1px solid rgba(34, 197, 94, 0.3);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.2);
 }
 
 .experience-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 18px;
   align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .date-range {
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.date-range::before {
+  content: "📅";
+  font-size: 0.85rem;
 }
 
 .separator {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 300;
 }
 
 .experience-description {
-  line-height: 1.7;
+  line-height: 1.75;
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  font-size: 1rem;
 }
 
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 16px;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .tech-tag {
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.08));
+  border: 1px solid rgba(59, 130, 246, 0.25);
   color: #93c5fd;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
   font-size: 0.85rem;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
 }
 
 .tech-tag:hover {
-  background: rgba(59, 130, 246, 0.15);
-  border-color: rgba(59, 130, 246, 0.4);
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(59, 130, 246, 0.15));
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.tech-tag:hover::before {
+  left: 100%;
 }
 
 /* Skills Grid Styling */
@@ -702,163 +791,364 @@ export default defineComponent({
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.skills-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px; }
-@media only screen and (min-width: 900px) { .skills-grid { grid-template-columns: repeat(3, 1fr); } }
-.skill-category { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 22px; transition: all 0.3s ease; }
-.skill-category:hover { background: rgba(255, 255, 255, 0.05); border-color: rgba(59, 130, 246, 0.3); transform: translateY(-2px); }
-.skill-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.skill-icon { font-size: 1.4rem; }
-.skill-category h3 { font-size: 1.1rem; font-weight: 700; margin: 0; color: #8fb4ff; letter-spacing: 0.2px; }
-.skill-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-.pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; font-size: 0.88rem; line-height: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.92); }
-.pill:hover { background: rgba(59,130,246,0.14); border-color: rgba(59,130,246,0.35); }
-.education-card {
-  display: flex;
-  gap: 20px;
+
+@media only screen and (min-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.skill-category {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 24px;
+  border-radius: 14px;
+  padding: 22px;
   transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+.skill-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.skill-icon {
+  font-size: 1.4rem;
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #8fb4ff;
+  letter-spacing: 0.2px;
+}
+
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.pill:hover {
+  background: rgba(59, 130, 246, 0.14);
+  border-color: rgba(59, 130, 246, 0.35);
+}
+/* Education Styling - Alternative Compact Design */
+.education-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .education-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.education-card {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(59, 130, 246, 0.05));
+  border: 2px solid rgba(139, 92, 246, 0.2);
+  border-radius: 20px;
+  padding: 28px 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6, #ec4899);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.education-card:hover::before {
+  transform: scaleX(1);
 }
 
 .education-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(139, 92, 246, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.1));
+  border-color: rgba(139, 92, 246, 0.4);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.25);
 }
 
 .education-icon {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin: 0 auto 20px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 60px;
-  height: 60px;
-  background: rgba(139, 92, 246, 0.1);
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.15));
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  position: relative;
 }
 
 .education-card:hover .education-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.15) rotate(5deg);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.25));
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3);
 }
 
 .education-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .education-content h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
   color: rgba(255, 255, 255, 0.95);
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 768px) {
+  .education-content h3 {
+    font-size: 1.15rem;
+    min-height: 56px;
+  }
 }
 
 .institution-name {
-  color: #8b5cf6;
-  font-weight: 500;
-  margin-bottom: 6px;
-  font-size: 1rem;
+  color: #a78bfa;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .education-year {
-  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
-  margin-bottom: 12px;
-  font-weight: 500;
+  margin-bottom: 14px;
+  font-weight: 600;
+  padding: 6px 14px;
+  background: rgba(139, 92, 246, 0.15);
+  border-radius: 12px;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  align-self: center;
 }
 
 .education-description {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @media only screen and (max-width: 640px) {
   .education-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 24px 20px;
   }
   
   .education-icon {
-    margin-bottom: 8px;
+    width: 70px;
+    height: 70px;
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+  
+  .education-content h3 {
+    font-size: 1.1rem;
   }
 }
 
-/* Languages Styling */
+/* Languages Styling - Horizontal Row Layout */
 .languages-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 20px;
+  margin-top: 24px;
 }
 
 @media only screen and (min-width: 640px) {
   .languages-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .languages-grid {
+    gap: 24px;
   }
 }
 
 .language-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.08), rgba(59, 130, 246, 0.05));
+  border: 2px solid rgba(236, 72, 153, 0.2);
+  border-radius: 16px;
   padding: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  transition: all 0.3s ease;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transition: left 0.6s ease;
+}
+
+.language-card:hover::after {
+  left: 100%;
 }
 
 .language-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(236, 72, 153, 0.3);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(59, 130, 246, 0.08));
+  border-color: rgba(236, 72, 153, 0.4);
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.25);
 }
 
 .language-icon {
-  font-size: 3rem;
-  margin-bottom: 12px;
-  transition: transform 0.3s ease;
-}
-
-.language-card:hover .language-icon {
-  transform: scale(1.2);
-}
-
-.language-content h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0 0 12px 0;
-  color: rgba(255, 255, 255, 0.95);
-}
-
-.proficiency-badge {
-  display: inline-block;
-  padding: 4px 12px;
+  font-size: 3.5rem;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(59, 130, 246, 0.15));
   border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  transition: all 0.4s ease;
+  border: 2px solid rgba(236, 72, 153, 0.3);
   margin-bottom: 8px;
 }
 
+.language-card:hover .language-icon {
+  transform: scale(1.15) rotate(5deg);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.3), rgba(59, 130, 246, 0.25));
+  border-color: rgba(236, 72, 153, 0.5);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.3);
+}
+
+.language-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+
+.language-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.proficiency-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+}
+
+.proficiency-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid;
+}
+
 .proficiency-badge.professional {
-  background: rgba(59, 130, 246, 0.15);
-  color: #3b82f6;
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1));
+  color: #60a5fa;
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.15);
 }
 
 .proficiency-badge.native {
-  background: rgba(236, 72, 153, 0.15);
-  color: #ec4899;
-  border: 1px solid rgba(236, 72, 153, 0.3);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(236, 72, 153, 0.1));
+  color: #f472b6;
+  border-color: rgba(236, 72, 153, 0.4);
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.15);
 }
 
 .proficiency-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 640px) {
+  .language-card {
+    padding: 20px;
+    gap: 14px;
+  }
+  
+  .language-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 3rem;
+  }
+  
+  .language-content h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .divider { height: 1px; background: rgba(255,255,255,0.08); margin: 32px 0; }

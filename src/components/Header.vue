@@ -2,13 +2,12 @@
   <div class="header">
     <div class="nav-bar">
       <router-link class="brand" to="/">
-        <span class="brand-mark" aria-hidden="true">MS</span>
+        <img src="/Icon.png" alt="Manish Savaliya Logo" class="brand-mark" />
         <span class="brand-text">Manish Savaliya</span>
       </router-link>
       <router-link to="/">About me</router-link>
       <router-link to="/game-projects">Games</router-link>
-      <router-link to="/other-projects">Other Projects</router-link>
-      
+      <router-link to="/other-projects">Other Projects</router-link>      
       <router-link to="/contact">Contact</router-link>
     </div>
   </div>
@@ -32,7 +31,7 @@ export default defineComponent({
   position: sticky;
   top: 0;
   z-index: 9;
-  backdrop-filter: saturate(120%) blur(4px);
+  backdrop-filter:saturate(100%) blur(10px);
 }
 
 .nav-bar {
@@ -68,14 +67,9 @@ a {
   width: 34px;
   height: 34px;
   border-radius: 9px;
-  background: conic-gradient(from 210deg, #60a5fa, #a78bfa, #34d399 75%, #60a5fa);
-  box-shadow: 0 6px 18px rgba(96,165,250,0.35);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.95em;
-  color: #0b0e12;
+  display: inline-block;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .brand-text {
@@ -89,7 +83,14 @@ a {
   transition: filter 0.2s ease;
 }
 
-.brand:hover .brand-text { filter: brightness(1.1); }
+/* Keep the brand always bright on all routes; disable hover/active changes */
+.brand { opacity: 1 !important; }
+.brand:hover { opacity: 1 !important; }
+.brand { filter: brightness(1.15) !important; }
+.brand .brand-text { filter: brightness(1.15) !important; }
+.brand:hover .brand-text { filter: brightness(1.15) !important; }
+.brand.router-link-active,
+.brand.router-link-exact-active { filter: brightness(1.15) !important; }
 
 .router-link-exact-active {
   border: 0;
