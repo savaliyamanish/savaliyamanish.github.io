@@ -114,7 +114,7 @@
     <div class="status-badge current">Current</div>
   </div>
   <div class="experience-meta">
-    <span class="date-range">Jan 2023 – Present</span>
+    <span class="date-range">Jul 2023 – Present</span>
     <span class="separator">•</span>
     <span>Full-time</span>
     <span class="separator">•</span>
@@ -145,7 +145,7 @@
     </div>
   </div>
   <div class="experience-meta">
-    <span class="date-range">Jan 2016 – Dec 2022</span>
+    <span class="date-range">Jan 2016 – Jun 2023</span>
     <span class="separator">•</span>
     <span>Full-time</span>
   </div>
@@ -181,7 +181,7 @@
     <div class="education-content">
       <h3>Master of Computer Application (MCA)</h3>
       <div class="institution-name">Department of Computer Science, Saurashtra University, Rajkot</div>
-      <div class="education-year">March 2016</div>
+      <div class="education-year">2016</div>
       <div class="education-description">
         Specialized in software engineering, systems design, and application development.
       </div>
@@ -193,7 +193,7 @@
     <div class="education-content">
       <h3>Bachelor of Computer Application (BCA)</h3>
       <div class="institution-name">Harivandana College, Saurashtra University, Rajkot</div>
-      <div class="education-year">March 2014</div>
+      <div class="education-year">2014</div>
       <div class="education-description">
         Focused on computer programming, database management, and software development.
       </div>
@@ -205,7 +205,7 @@
     <div class="education-content">
       <h3>Higher Secondary Certificate (HSC)</h3>
       <div class="institution-name">Gujarat Secondary and Higher Secondary Education Board</div>
-      <div class="education-year">March 2011</div>
+      <div class="education-year">2011</div>
       <div class="education-description">
         Completed higher secondary education with a focus on mathematics and computer science.
       </div>

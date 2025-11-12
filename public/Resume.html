@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Manish Savaliya - Resume</title>
+  <style>
+    @page { size: A4; margin: 12mm; }
+    * { box-sizing: border-box; }
+    body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; color: #2d3138; background: #f7f8fa; margin: 0; padding: 0; font-size: 12px; line-height: 1.6; }
+    a { color: #405742; text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; color: #405742; }
+
+    /* Header */
+    .header { background: linear-gradient(135deg, #2b3038, #3c424d); color: #f5f6f9; padding: 12px 20px; border-bottom: 3px solid #405742; }
+    .header .title { font-size: 20px; font-weight: 700; margin: 0; line-height: 1.3; }
+    .header .subtitle { font-size: 12px; margin-top: 4px; opacity: 0.95; }
+
+    /* Contact */
+    .contact { background: #ffffff; padding: 10px 20px; font-size: 12.5px; line-height: 1.7; color: #3b4049; border-bottom: 1px solid #e1e3e8; }
+    .contact a { color: #405742; text-decoration: none; font-weight: 600; }
+    .contact a:hover { text-decoration: underline; color: #405742; }
+
+    /* Layout */
+    .container { display: flex; gap: 20px; padding: 20px; }
+    .left { width: 250px; flex-shrink: 0; }
+    .right { flex: 1; }
+
+    /* Headings */
+    h3 { color: #1f3b35; font-size: 14px; font-weight: 700; margin: 10px 0 10px; border-bottom: 2px solid #5dd0b3; padding-bottom: 4px; }
+    p.summary { margin: 6px 0 16px; font-size: 12.2px; line-height: 1.7; color: #45635d; }
+
+    @page { size: A4; margin: 10mm; }
+* { box-sizing: border-box; }
+
+body {
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  color: #2d3138;
+  background: #f7f8fa;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+a { color: #405742; text-decoration: none; font-weight: 600; }
+a:hover { text-decoration: underline; color: #3c424d; }
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #2b3038, #3c424d);
+  color: #f5f6f9;
+  padding: 10px 20px;
+  border-bottom: 3px solid #405742;
+  page-break-after: avoid;
+  page-break-before: avoid;
+  page-break-inside: avoid;
+}
+.header .title { font-size: 20px; font-weight: 700; margin: 0; line-height: 1.3; }
+.header .subtitle { font-size: 12px; margin-top: 4px; opacity: 0.95; }
+
+/* Contact */
+.contact {
+  background: #ffffff;
+  padding: 8px 20px;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #3b4049;
+  border-bottom: 1px solid #e1e3e8;
+  page-break-before: avoid;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+.contact a { color: #405742; text-decoration: none; font-weight: 600; }
+.contact a:hover { text-decoration: underline; color: #ff6b2c; }
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 18px;
+  padding: 16px 20px;
+  page-break-before: avoid;
+  page-break-after: avoid;
+}
+.left { width: 240px; flex-shrink: 0; }
+.right { flex: 1; }
+
+/* General */
+    h3 { color: #2b3038; font-size: 14px; font-weight: 700; margin: 8px 0 10px; border-bottom: 2px solid #405742; padding-bottom: 4px; }
+    p.summary { margin: 6px 0 14px; font-size: 12.2px; line-height: 1.7; color: #4b515c; }
+    .box { background: #ffffff; padding: 10px 12px; border-radius: 6px; margin-bottom: 12px; border: 1px solid #e1e4ea; box-shadow: 0 6px 16px rgba(44, 49, 58, 0.08); }
+    .section-title { font-weight: 700; color: #2b3038; margin-bottom: 6px; font-size: 13px; }
+
+/* Lists */
+ul { list-style: disc; margin: 0; padding-left: 16px; }
+li { margin-bottom: 3px; line-height: 1.5; font-size: 12px; color: #3c444f; }
+
+/* Job */
+.job { margin-bottom: 14px; }
+.job h4 { margin: 0 0 4px; font-size: 13.5px; color: #303740; font-weight: 600; }
+.job .meta { font-size: 11px; color: #6a707c; margin-bottom: 5px; }
+
+/* Flagship */
+.flag {
+  border-left: 4px solid #405742;
+  background: linear-gradient(135deg, rgba(234, 234, 234, 0.9), rgba(255, 255, 255, 0.9));
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-size: 12px;
+  color: #383f49;
+  page-break-inside: avoid;
+  border-right: 1px solid #383f49;
+  border-top: 1px solid #383f49;
+  border-bottom: 1px solid #383f49;
+}
+.flag a { color: #405742; }
+
+/* Projects */
+.projects { font-size: 11.5px; }
+.projects ul { column-count: 2; column-gap: 16px; }
+.projects li { break-inside: avoid; margin-bottom: 4px; }
+
+/* Footer */
+.footer-note {
+  font-size: 12px;
+  color: #565d68;
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px solid #e1e3e8;
+  text-align: center;
+  line-height: 1.7;
+  page-break-before: avoid;
+}
+.footer-note a { color: #405742; }
+
+/* Print fix */
+@media print {
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; margin: 0; padding: 0; }
+  .header, .contact, .container, .footer-note { page-break-inside: avoid; }
+  * { orphans: 0; widows: 0; }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="title">Manish Savaliya</div>
+    <div class="subtitle">Game Developer (Unity)</div>
+  </div>
+
+  <div class="contact">
+    Rajkot, Gujarat, India |
+    <a href="https://wa.me/918866230018">+91 8866230018</a> |
+    <a href="mailto:savaliyamanish1141@gmail.com">savaliyamanish1141@gmail.com</a><br />
+    Portfolio: <a href="https://savaliyamanish.github.io" target="_blank">savaliyamanish.github.io</a> |
+    LinkedIn: <a href="https://www.linkedin.com/in/savaliyamanish/" target="_blank">linkedin.com/in/savaliyamanish/</a>
+  </div>
+
+  <div class="container">
+    <aside class="left">
+      <div class="box">
+        <div class="section-title">Skills & Tech</div>
+        <ul>
+          <li>Game Development (Unity, C#)</li>
+          <li>Gameplay Programming & Systems Design</li>
+          <li>AI, Animation & Game Physics</li>
+          <li>Particle Systems & Shader Graph</li>
+          <li>Multiplayer (Photon, Socket.IO)</li>
+          <li>UI/UX Implementation & Level Design</li>
+          <li>Asset Bundles, Addressables & Pipelines</li>
+          <li>Profiling, Debugging & Optimization</li>
+          <li>Monetization (IAP & Ads)</li>
+          <li>Version Control (GitHub, Plastic SCM)</li>
+          <li>Team Collaboration & Leadership</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="section-title">Technical Stack</div>
+        <div>Unity · GitHub · Plastic SCM · VS Code · Rider · Cursor · Blender · Photoshop · Illustrator · Figma · Trello · Firebase · Unity Analytics · Ads SDKs · Gradle · Xcode · Android Studio</div>
+      </div>
+
+      <div class="box">
+        <div class="section-title">Education</div>
+        <div style="margin-bottom: 6px;">MCA, Dept. of Computer Science, Saurashtra University, Rajkot (2016)</div>
+        <div style="margin-bottom: 6px;">BCA, Harivandana College, Saurashtra University, Rajkot (2014)</div>
+        <div>HSC, Gujarat Board (2011)</div>
+      </div>
+
+      <div class="box">
+        <div class="section-title">Industry Engagement</div>
+        <ul>
+          <li>Represented Narqubis Games at IGDC 2024 (Hyderabad), showcasing <em>Narqubis</em> and networking with publishers & studios.</li>
+          <li>Organized esports tournaments at Marwadi University and Darshan College (Rajkot).</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="right">
+      <h3 style="margin-top: 0;">Professional Summary</h3>
+      <p class="summary">
+        Experienced Unity Game Developer specializing in gameplay systems, AI, multiplayer, and optimization for mobile and PC platforms. Focused on delivering smooth, scalable, and engaging player experiences through clean architecture and technical creativity.
+      </p>
+
+      <h3>Experience</h3>
+      <div class="job">
+        <h4>Narqubis Games Private Limited : Sr. Unity Developer</h4>
+        <div class="meta">July 2024 – Present</div>
+        <ul>
+          <li>Developed <strong>Narqubis – Mini Battle Royale</strong>, a fast-paced multiplayer shooter with dynamic maps, player progression, and competitive game modes.</li>
+          <li>Implemented matchmaking, core loops, and multiplayer systems with Photon and Socket.IO.</li>
+          <li>Created and optimized shooting mechanics, AI enemies, and player controls.</li>
+          <li>Designed intuitive UI/UX for menus, loadouts, and player feedback systems.</li>
+          <li>Integrated analytics, IAP, and Ads SDKs for live-ops and monetization balance.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Freebird App Studio LLP : Unity Developer</h4>
+        <div class="meta">July 2016 – June 2023</div>
+        <ul>
+          <li>Developed and maintained multiple commercial mobile games from concept to launch, focusing on engaging gameplay, performance, and seamless live-ops support.</li>
+          <li>Built and optimized core gameplay systems, tools, and live-ops frameworks across 2D and 3D projects, ensuring scalable, high-performance builds.</li>
+          <li>Integrated Firebase, analytics, Asset Bundles & Addressables, and store SDKs for release automation and continuous updates.</li>
+          <li>Implemented monetization systems (IAP & Ads) and remote configuration to support feature iteration and data-driven balancing.</li>
+        </ul>
+      </div>
+      
+
+      <div class="flag">
+        <strong>Flagship Project: <a href="https://savaliyamanish.github.io/#/game-projects/narqubis" target="_blank">Narqubis</a></strong>  
+        A third-person shooter with Story & Multiplayer modes featuring AI combat, battle royale systems, and progression. Reached <strong>100K+ downloads</strong> with an active community through in-game events and tournaments.
+      </div>
+
+      <h3>Selected Projects</h3>
+      <div class="projects box">
+        <ul>
+          <li><a href="https://savaliyamanish.github.io/#/game-projects/narqubis_match_3" target="_blank">Narqubis Match 3</a> — Match-3 puzzle</li>
+          <li><a href="https://savaliyamanish.github.io/#/game-projects/teenpatti">Teen Patti, Poker & Roulette</a> — Social casino systems</li>
+          <li><a href="https://savaliyamanish.github.io/#/game-projects/master_of_gin_rummy">Master Of Gin Rummy</a> — Card game</li>
+          <li><a href="https://savaliyamanish.github.io/#/other-projects/modulars_for_you_kitchen">Modulars For You Kitchen</a> — Kitchen Simulation</li>
+          <li><a href="https://savaliyamanish.github.io/#/game-projects/cribbage_solitaire">Cribbage Solitaire</a> — Card game</li>
+          <li><a href="https://savaliyamanish.github.io/#/game-projects/knife_hit">Knife Hit</a> · <a href="https://savaliyamanish.github.io/#/game-projects/sudoku_puzzle">Sudoku</a> · <a href="https://savaliyamanish.github.io/#/game-projects/uno_space">Uno Space</a> · <a href="https://savaliyamanish.github.io/#/game-projects/matches_puzzle">Matches Puzzle</a> · <a href="https://savaliyamanish.github.io/#/other-projects/nuts_about_notes">Nuts About Notes</a> · <a href="https://savaliyamanish.github.io/#/other-projects/kids_abc">Kids ABC & Numbers</a> · <a href="https://savaliyamanish.github.io/#/game-projects/pipe_out">Pipe Out</a> · <a href="https://savaliyamanish.github.io/#/game-projects/panch_out">Panch Out</a> · <a href="https://savaliyamanish.github.io/#/game-projects/bubquest">BubQuest</a> · <a href="https://savaliyamanish.github.io/#/game-projects/color_point">Color Point</a> · <a href="https://savaliyamanish.github.io/#/game-projects/car_bump_3d">Car Bump 3D</a> · <a href="https://savaliyamanish.github.io/#/game-projects/forgotten_heroes">Forgotten Heroes</a> · <a href="https://savaliyamanish.github.io/#/game-projects/traffic_car">Traffic Car</a> · <a href="https://savaliyamanish.github.io/#/game-projects/loaded_runner">Loaded Runner</a> · <a href="https://savaliyamanish.github.io/#/game-projects/bible_wars">Bible Wars</a> · <a href="https://savaliyamanish.github.io/#/game-projects/striker_board">Striker Board</a> · <a href="https://savaliyamanish.github.io/#/game-projects/mailbox_money">Mailbox Money</a> · <a href="https://savaliyamanish.github.io/#/other-projects/statusq">StatusQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-note">
+        📧 <a href="mailto:savaliyamanish1141@gmail.com">savaliyamanish1141@gmail.com</a> ·  
+        🌐 <a href="https://savaliyamanish.github.io" target="_blank">savaliyamanish.github.io</a> ·  
+        🔗 <a href="https://www.linkedin.com/in/savaliyamanish/" target="_blank">linkedin.com/in/savaliyamanish/</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

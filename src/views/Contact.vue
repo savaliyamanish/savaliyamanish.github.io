@@ -42,7 +42,7 @@
         </div>
         <div class="contact-content">
           <h3>WhatsApp</h3>
-          <div class="contact-text">+91 88662 30018</div>
+          <div class="contact-text">Contact Me</div>
         </div>
       </a>
       
@@ -53,6 +53,16 @@
         <div class="contact-content">
           <h3>GitHub</h3>
           <div class="contact-text">github.com/savaliyamanish</div>
+        </div>
+      </a>
+
+      <a class="contact-card" href="/1_Manish_Savaliya_Resume.pdf" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <i class="fa fa-file-pdf-o"></i>
+        </div>
+        <div class="contact-content">
+          <h3>Resume</h3>
+          <div class="contact-text">Download Resume (PDF)</div>
         </div>
       </a>
     </div>
