@@ -7,12 +7,14 @@
         <h1 class="dialog-title">{{ title }}</h1>
         <div @click="$emit('close')" class="dialog-close"><i class="fa fa-times fa-lg fa-fw"></i></div>
         <div class="dialog-content">
-          <!-- Short Description -->
-          <div v-if="projectData?.shortDescription" class="short-description">
-            <h3>Overview</h3>
-            <div v-html="projectData.shortDescription"></div>
+
+          <!-- My Role -->
+          <div v-if="projectData?.role && projectData.role.trim() !== ''" class="my-role">
+            <h3>My Role</h3>
+            <div v-html="projectData.role"></div>
           </div>
 
+          
           <!-- Media Slider (Swiper) -->
           <div v-if="hasMedia" class="media-slider">
             <h3>Media</h3>
@@ -37,17 +39,17 @@
             <div class="media-pagination"></div>
           </div>
 
+          <!-- Short Description -->
+          <div v-if="projectData?.shortDescription" class="short-description">
+            <h3>Overview</h3>
+            <div v-html="projectData.shortDescription"></div>
+          </div>
+
           <!-- Full Description -->
           <div v-if="projectData?.fullDescription" class="full-description">
             <h3>Description</h3>
             <div v-html="projectData.fullDescription"></div>
-          </div>
-
-          <!-- My Role -->
-          <div v-if="projectData?.role && projectData.role.trim() !== ''" class="my-role">
-            <h3>My Role</h3>
-            <div v-html="projectData.role"></div>
-          </div>
+          </div>          
 
           <!-- Links -->
           <div v-if="projectData?.links && projectData.links.length > 0" class="links-section">

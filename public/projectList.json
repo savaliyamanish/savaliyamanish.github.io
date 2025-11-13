@@ -7,121 +7,176 @@
     },
     {
       "id": "20_MatchMaster",
-      "override": {}
+      "override": {
+        "role": "Developed the core game loop, multiplayer logic, and all Unity-side systems including boosters, tournaments, and UI flows."
+      }
     },    
     {
       "id": "26_TeenPatti",
-      "override": {}
+      "override": {
+        "role": "<p>Developed multiplayer Teen Patti and Poker, including all major Teen Patti variations, card distribution and winning algorithms, gameplay systems, UI flows, push-to-talk, and other core Unity features.</p>"
+      }
     },
     {
       "id": "3_knifehit",
-      "override": {}
+      "override": {
+        "role": "<p>Handled all Unity-side development, including knife-throw mechanics, rotation logic, stage progression, boss behavior systems, apple rewards, and the full knife unlock and shop setup.</p>"
+      }
+      
     },
     {
       "id": "5_sudoku",
-      "override": {}
+      "override": {
+        "role": "<p>Developed the full Unity gameplay system including board generation, difficulty logic, hint and notes tools, error detection, and timer functionality — along with all UI interactions and smooth puzzle flow.</p>"
+      }
+      
     },
     {
       "id": "15_ginrummy",
-      "override": {}
+      "override": {
+        "role": "<p>Developed complete Unity-side systems: core gameplay and player flow, multiplayer socket events and networking algorithms, card validation and winning logic, matchmaking and game state synchronization, plus UI flows and scoring.</p>"
+      }      
     },
     {
       "id": "2_uno",
-      "override": {}
+      "override": {
+        "role": "<p>Developed the entire Unity-side gameplay including card logic, turn system, AI opponent behaviors, animations, UI flows, and overall game state management. Implemented smooth interactions, rule handling, and player customization features for a complete UNO-style experience.</p>"
+      }
+      
     },
     {
       "id": "13_cribbagesolitaire",
-      "override": {}
+      "override": {
+        "role": "<p>Developed all Unity-side systems including the core player loop, game flow logic, card validation, scoring and winning calculations, match state handling, UI interactions, and overall gameplay logic for a smooth and polished experience.</p>"
+      }
+      
     },
     {
       "id": "6_matchpuzzle",
-      "override": {}
+      "override": {
+        "role": "<p>Worked with the team to build core gameplay logic, puzzle validation, and all Unity-side interactions for smooth matchstick movement and level completion flow.</p>"
+      }
+      
     },
     {
       "id": "7_pipeout",
-      "override": {}
+      "override": {
+        "role": "<p>Developed with my teammate, implementing core Unity gameplay, pipe rotation mechanics, level progression, daily rewards and hint systems, game status tracking, and all UI interactions for a polished puzzle experience.</p>"
+      }
+      
     },
     {
       "id": "8_panchout",
-      "override": {}
+      "override": {
+        "role": "<p>Developed with my teammate, implementing core Unity gameplay, dice outcome algorithms and inning flow, and building multiplayer features using Firebase Realtime Database and PlayFab for matchmaking, session state, and player data.</p>"
+      }      
     },
     {
       "id": "10_bubquest",
-      "override": {}
+      "override": {
+        "role": "<p>Improved performance and stability across the project, enhancing bubble physics, reducing loading times, and ensuring smoother gameplay on low-end Android devices.</p>"
+      }
+      
     },
     {
       "id": "31_ColorPoint",
-      "override": {}
+      "override": {
+        "role": "<p>Developed the game together with my teammates, contributing to core gameplay mechanics, obstacle behaviour, and overall Unity implementation to ensure smooth and responsive arcade gameplay.</p>"
+      }
+      
     },     
     {
       "id": "11_carbump",
-      "override": {}
+      "override": {
+        "role": "<p>Supported the junior developer by improving scene performance, refining lighting setups, and ensuring smoother gameplay and visual consistency across levels.</p>"
+      }
+      
     },
     {
       "id": "33_ForgottoneHero",
-      "override": {}
+      "override": {
+        "role": "<p>Built the core game loop and added LAN multiplayer using Unity Networking, handling room discovery, player sync, and smooth real-time gameplay.</p>"
+      }
     },
     {
       "id": "41_TrafficCar",
-      "override": {}
+      "override": {
+        "role": "<p>Supported the junior developer by improving scene performance, refining lighting setups, and ensuring smoother gameplay and visual consistency across levels.</p>"
+      }
     },   
     {
       "id": "18_LoadedRunner",
-      "override": {}
+      "override":{
+        "role": "<p>Handled all Unity-side development including core gameplay systems, UI flows, animations, level logic, and performance tuning.</p>"
+      }
     },
     {
       "id": "28_BibleWar",
-      "override": {}
+      "override": {
+        "role": "<p>Handled all Unity-side development including core gameplay systems, UI flows, animations, level logic, and performance tuning.</p>"
+      }
     },
     {
       "id": "25_Striker",
-      "override": {}
+      "override": {
+        "role": "<p>Developed core gameplay systems for the digital Carrom experience, including striker physics, coin interactions, scoring, and game flow. Built online multiplayer using <strong>Photon</strong> with room creation, matchmaking, syncing, and real-time turn handling.</p>"
+
+      }
     },
     {
       "id": "24_SpaceFarm",
-      "override": {}
+      "override": {
+        "role": "<p>Handled all Unity-side development including core gameplay systems, UI flows, animations, level logic, and performance tuning.</p>"
+      }
+      
     },
     {
       "id": "22_SlackDay",
-      "override": {}
+      "override": {
+        "role": "<p>Handled all Unity-side development including core gameplay systems, UI flows, animations, level logic, and performance tuning.</p>"
+      }
+      
     },
     {
       "id": "36_Lupan",
-      "override": {}
+      "override": 
+      {
+        "role": "<p>Handled all Unity-side development including core gameplay systems, UI flows, animations, level logic, and performance tuning.</p>"
+      }
+      
     },
     {
       "id": "37_MailBox",
-      "override": {}
-    },
-    {
-      "id": "16_kachufull",
-      "override": {}
-    },
-    {
-      "id": "23_SpaceExit",
-      "override": {}
-    },
-    {
-      "id": "17_kathmandu",
-      "override": {}
+      "override": {
+        "role": "<p>Handled Unity-side implementations including avatar interaction logic, UI behavior, event handling, and gameplay flow. Ensured smooth performance, refined in-game systems, and improved user experience throughout the simulation environment.</p>"
+
+      }
     }
   ],
   "otherProjects": [
     {
       "id": "21_ModularsForYouKitchen",
-      "override": {}
+      "override": {
+        "role": "<p>Developed the entire Unity web app, including runtime dynamic mesh generation for walls, layout logic, and all UI/interaction systems.</p>"
+      }
     },
     {
       "id": "9_music",
-      "override": {}
+      "override": {
+        "role": "<p>Developed with my teammate, contributing to all Unity-side systems including UI flow, animations, level logic, and smooth interactions across the music-learning modules.</p>"
+      }
     },
     {
       "id": "4_kidgame",
-      "override": {}
+      "override": {
+        "role": "<p>Developed with a teammate, handling Unity implementation for alphabets, numbers, audio playback, UI flow, and interactive learning screens.</p>"
+      }
     },
     {
       "id": "39_StatusQ",
-      "override": {}
+      "override": {
+        "role": "<p>Worked as a teammate on R&D to build a bridge between the Unity app and native Android/iOS platforms.</p>"
+      }
     }    
   ]
 }
