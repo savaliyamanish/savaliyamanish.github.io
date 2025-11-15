@@ -3,7 +3,9 @@
   "gameProjects": [
     {
       "id": "1_narqubis",
-      "override": {}
+      "override": {
+        "role": "<p>Served as the Lead Unity Developer for Narqubis, handling core gameplay architecture, multiplayer systems (Photon + custom logic), combat mechanics, UI flows, and overall Unity-side development. Also coordinated closely with teammates to deliver features, fix blockers, and ensure smooth cross-platform performance.</p>"
+      }
     },
     {
       "id": "20_MatchMaster",
