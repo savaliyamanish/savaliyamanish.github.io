@@ -8,8 +8,9 @@
           </h1>
         <div class="hero-description">
           <p>
-              I’m a passionate <strong>Unity Game Developer</strong> with over 8 years of experience creating engaging mobile and PC games. I specialize in gameplay programming, performance optimization, and smooth user experiences that bring ideas to life.
-            </p>
+  I’m a passionate <strong>Unity Game Developer</strong> focused on building engaging mobile games with polished gameplay, smooth performance, and player-friendly experiences. I love turning ideas into fun, interactive, high-quality games.
+</p>
+
           <p class="hero-cta">
             Open to work — feel free to
             <router-link to="/contact" class="contact-link">contact me</router-link>,
