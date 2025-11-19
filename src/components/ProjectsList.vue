@@ -175,6 +175,7 @@ export default defineComponent({
 <style scoped>
 
 .project-item {
+  border-radius: 18px;
   margin-bottom: 20px;
   width: 100%;
   cursor: pointer;
