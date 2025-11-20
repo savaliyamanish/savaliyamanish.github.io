@@ -27,7 +27,9 @@
     },
     {
       "id": "3_knifehit",
-      "override": {
+      "override": {         
+        "preload": ["/icon/knifehit_icon.mp4"],
+        "iconUrl": "/icon/knifehit_icon.mp4",
         "role": "<p>Handled all Unity-side development, including knife-throw mechanics, rotation logic, stage progression, boss behavior systems, apple rewards, and the full knife unlock and shop setup.</p>"
       }
       
@@ -44,6 +46,8 @@
     {
       "id": "15_ginrummy",
       "override": {
+        "preload": ["/icon/ginrummy_icon.mp4"],
+        "iconUrl": "/icon/ginrummy_icon.mp4",
         "role": "<p>Developed complete Unity-side systems: core gameplay and player flow, multiplayer socket events and networking algorithms, card validation and winning logic, matchmaking and game state synchronization, plus UI flows and scoring.</p>"
       }      
     },
@@ -167,6 +171,8 @@
     {
       "id": "21_ModularsForYouKitchen",
       "override": {
+        "preload": ["/icon/m4u_icon.mp4"],
+        "iconUrl": "/icon/m4u_icon.mp4",
         "role": "<p>Developed the entire Unity web app, including runtime dynamic mesh generation for walls, layout logic, and all UI/interaction systems.</p>"
       }
     },
