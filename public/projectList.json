@@ -4,19 +4,24 @@
     {
       "id": "1_narqubis",
       "override": {
+        "preload": ["/icon/narqubis_icon.mp4"],
         "iconUrl": "/icon/narqubis_icon.mp4",
         "role": "<p>Served as the Lead Unity Developer for Narqubis, handling core gameplay architecture, multiplayer systems (Photon + custom logic), combat mechanics, UI flows, and overall Unity-side development. Also coordinated closely with teammates to deliver features, fix blockers, and ensure smooth cross-platform performance.</p>"
       }
     },
     {
       "id": "20_MatchMaster",
-      "override": {
+      "override": {        
+        "preload": ["/icon/matchmaster_icon.mp4"],
+        "iconUrl": "/icon/matchmaster_icon.mp4",
         "role": "Developed the core game loop, multiplayer logic, and all Unity-side systems including boosters, tournaments, and UI flows."
       }
     },    
     {
       "id": "26_TeenPatti",
       "override": {
+        "preload": ["/icon/teenpatti_icon.mp4"],
+        "iconUrl": "/icon/teenpatti_icon.mp4",
         "role": "<p>Developed multiplayer Teen Patti and Poker, including all major Teen Patti variations, card distribution and winning algorithms, gameplay systems, UI flows, push-to-talk, and other core Unity features.</p>"
       }
     },
@@ -30,6 +35,8 @@
     {
       "id": "5_sudoku",
       "override": {
+        "preload": ["/icon/sudoku_icon.mp4"],
+        "iconUrl": "/icon/sudoku_icon.mp4",
         "role": "<p>Developed the full Unity gameplay system including board generation, difficulty logic, hint and notes tools, error detection, and timer functionality — along with all UI interactions and smooth puzzle flow.</p>"
       }
       
